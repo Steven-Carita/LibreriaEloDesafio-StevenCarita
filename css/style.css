@@ -1,0 +1,980 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-family: sans-serif;
+	background-color: #D9D9D9;
+	background-attachment: fixed;
+}
+
+
+#gridIndex{
+	display: grid;
+	grid-template-areas: 
+	"nav" 
+	"headerIndex" 
+	"mainIndex" 
+	"publicidad1" 
+	"publicidad2" 
+	"aside" 
+	"footer";
+	min-height: 100vh;
+	grid-template-rows: 70px auto auto auto auto 35px 70px;
+	grid-template-columns: 100%;
+}
+
+nav{
+	grid-area: nav;
+	display: flex;
+	justify-content: space-between;
+	background: red;
+	align-items: center;
+
+}
+
+#headerIndex{
+	grid-area: headerIndex;
+}
+
+#mainIndex{
+	grid-area: mainIndex;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 10px 0;
+}
+
+.publicidad1{
+	grid-area: publicidad1;
+}
+
+.publicidad2{
+	grid-area: publicidad2;
+}
+
+
+.aside{
+	grid-area: aside;
+}
+
+footer{
+	grid-area: footer;
+	background-color: #262626;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* inicio Nav*/
+
+nav a img{
+	height: 50px;
+}
+
+
+
+nav div a{
+    text-decoration: none;
+    font-size: 2.0rem; 
+    color: white;
+    margin: 0 10px;
+}
+
+
+.navImg, .navImput{
+	display: none;
+}
+
+.nav{
+	padding: 8px 20px;
+	border-radius: 3px;
+}
+
+.nav:hover{
+	background-color: darkred;
+	transition: 0.5s; 
+}
+/*fin nav*/
+
+/*Inicio header y main*/
+.headerImg{
+	width: 100%;
+}
+
+div img{
+	width: 80%;
+}
+
+.promociones{
+	width: 48%;
+	text-align: center;
+}
+
+.tituloPromociones{
+	color: darkred;
+	font-size: 2.5rem;
+	margin: 0 0 10px 0;
+	border-bottom: solid #C7C7C7;
+	border-width: 1px;
+	padding-bottom: 5px;
+}
+
+.figure{
+	display: flex;
+	justify-content: space-around;
+}
+
+section.promociones figure{
+	text-align: center;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.22);
+	padding: 3%;
+	margin: 2% 0;
+	width: 45%;
+}
+
+section.promociones figure figcaption{
+	text-align: center;
+	font-size: 2rem;
+}
+
+section.promociones figure p{
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 5px 0 30px 0;
+}
+
+section.promociones figure a{
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: black;
+	border-style: solid;
+	border-width: 1px;
+	padding: 1% 20%;
+}
+
+section.promociones figure a:hover{
+	background-color: darkred;
+	color: white;
+	transition: 0.5s;
+}
+
+
+.sucursal{
+	width: 48%;
+	text-align: center;
+	position: relative;
+	margin-top: -10px;
+}
+
+.tituloSucursal{
+	color: darkred;
+	font-size: 2.5rem;
+	border-bottom: solid #C7C7C7;
+	border-width: 1px;
+	padding-bottom: 5px;
+}
+
+.pSucursal{
+	font-size: 1.5rem;
+	margin: 20px 0;
+}
+.mapa{
+	width: 95%;
+	height: 65%;
+}
+
+.publicidad1{
+	width: 95%;
+	text-align: center;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+}
+
+.publicidad1 img{
+	width: 17%;
+}
+
+.publicidad2{
+	display: flex;
+	justify-content: space-around;
+	width: 95%;
+	margin: auto;
+	padding: 10px 0 ;
+}
+
+.publicidad2 img{
+	width: 40%;
+}
+
+.aside{
+	text-align: center;            
+	font-size: 1.5rem;
+	padding-top: 8px;
+}
+
+footer img{
+	height: 20px;
+	margin: 5px;
+}
+
+#footerLetra{
+	font-size: 1.5rem;
+	margin: 0 5px;
+	color: white;
+	font-family: roboto;
+	font-weight: normal;
+}
+
+/*end index*/
+
+/*inicio de ibreria*/
+
+.wrap{
+	width: 90%;
+	margin: auto;
+}
+
+.wrap h1{
+	color: #494B4D;
+	font-weight: 400;
+	display: flex;
+	flex-direction:column;
+	text-align: center;
+	margin: 15px 0px;
+	font-size: 2.5rem;
+}
+
+.wrap h1:after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+}
+
+.store-wrapper{
+	display: flex;
+} 
+
+.category_list{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+}
+	
+
+.category_list .category_item{
+	display: block;
+	width: 90%;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	background-color: darkred;
+	font-size: 2rem;
+
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+
+
+/*Inicio de Productos*/
+
+.products-list{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.products-list .product-item{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom: 25px;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.22);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+}
+
+.products-list .product-item img{
+	width: 100%;
+}
+
+.products-list .product-item a{
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	background-color: black;
+
+	color: white;
+	font-size: 1.8rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+/*fin de Libreria*/
+
+/*Inicio de combos*/
+
+.wrap .combos{
+	text-align: center;
+	display: grid;
+	grid-template-areas: 
+	"figura1 figura2 figura3" 
+	"figura4 figura5 figura6";
+	grid-gap: 20px 20px;	
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#figura1{
+	grid-area: figura1;
+	padding: 10px;
+}
+
+
+#figura2{
+	grid-area: figura2;
+	padding: 10px;
+}
+
+#figura3{
+	grid-area: figura3;
+	padding: 10px;
+}
+
+#figura4{
+	grid-area: figura4;
+	padding: 10px;
+}
+
+#figura5{
+	grid-area: figura5;
+	padding: 10px;
+}
+
+#figura6{
+	grid-area: figura6;
+	padding: 10px;
+}
+
+section figure img{
+	width: 70%;
+}
+
+.wrap .combos figure figcaption{
+	color: darkred;
+  	font-size: 2rem;
+  	margin: 10px;
+}
+
+.wrap .combos figure a{
+  	text-decoration: none;
+  	font-size: 1.4rem;
+  	color: black;
+  	border-style: solid;
+	border-width: 1px;
+	padding: 3px 60px;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.50);
+}
+
+.wrap .combos figure p{
+	font-size: 1.5rem;
+	padding: 15px 0;
+}
+
+.wrap .combos figure a:hover{
+	color: white;
+	background-color: darkred;
+	transition: 0.5s;
+}
+
+/*Fin de Combos*/
+
+/*Inicio de Nosotros*/
+
+.quinesSomos{
+	display: grid;
+	grid-template-areas: 
+	"section1 asideImg" 
+	"section2 asideImg" 
+	"section3 asideImg" 
+	"asideVisita asideImg";
+	min-height: 100vh;
+	grid-template-columns: 90% 9%;
+	grid-template-rows: 32% 32% 32% 6%;
+	grid-gap: 5px 1%;
+}
+
+#section1{
+	grid-area: section1;
+}	
+
+#section2{
+	grid-area: section2;
+}
+
+#section3{
+	grid-area: section3;
+}
+
+#asideImg{
+	grid-area: asideImg;
+	background-size:cover;
+	animation-name: animationAside;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+}
+
+#asideVisita{
+	text-align: center;
+	grid-area: asideVisita;
+	font-size: 1.5rem;
+}
+
+section article img{
+	width: 30%;
+	padding: 0 10px;
+}
+
+div section article{
+	display: flex;
+	height: 80%;
+}
+div section article p{
+	font-size: 1.5rem;
+}
+
+div section h1,h2,h3{
+	text-align: center;
+	padding: 10px 0;
+	font-size: 2rem;
+}
+
+@keyframes animationAside{
+	0%{background-image: url(../img/img-vertical-aside/5.gif);}
+	25%{background-image: url(../img/img-vertical-aside/2.png);}
+	50%{background-image: url(../img/img-vertical-aside/3.png);}
+	75%{background-image: url(../img/img-vertical-aside/4.png);}
+	100%{background-image: url(../img/img-vertical-aside/5.gif);}
+}
+
+
+/*Fin de Nosotros*/
+
+/*inicio de contacto*/
+
+.form-title{
+	font-weight: normal;
+	color: #D96262;
+	font-size: 4rem;
+	text-align: center;
+	padding: 14px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form{
+	background: rgba(0, 0, 0,.6);
+	width: 40%;
+	margin: auto;
+	padding: 5px 20px;
+	margin-top: 30px;
+	padding-bottom: 30px;
+	border-radius: 3px; 
+}
+
+.form-label{
+	display: block;
+	color: #D96262;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3rem;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.form-input, 
+.form-textarea{
+	background-color: rgba(0, 0, 0, .7);
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #D96262;
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	font-size: 2rem;
+	color:  white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+	width: 100%;
+	outline: none;
+	background: #D96262;
+	font-size: 2rem;
+	border: none;
+	color: white;
+	padding: 20px 0;
+	cursor: pointer;
+
+}
+
+.btn:hover{
+	background: #F28B66;
+	transition: .5s;
+}
+
+.headerImg2{
+	width: 100%;
+}
+
+/*Fin de Contactos*/
+
+@media screen and (max-width: 1024px){
+
+	/*¨¨¨¨INDEX¨¨¨¨*/
+
+	#gridIndex{
+		grid-template-rows: 60px auto auto auto auto auto 60px;
+	}
+
+	nav a img{
+		height: 40px;
+	}
+
+	.mapa{
+		width: 95%;
+		height: 40%;
+	}
+
+	nav div a{
+    	font-size: 1.5rem; 
+	}	
+
+	.tituloPromociones{
+		font-size: 2rem;
+	}
+
+	.tituloSucursal{
+		font-size: 2rem;
+	}
+
+	section.promociones figure figcaption{
+		font-size: 1.3rem;
+		margin-top: 4px;
+	}
+
+	section.promociones figure p{
+		font-size: 1rem;
+		padding: 5px 0 10px 0;
+	}
+
+	section.promociones figure a{
+		font-size: 1.1rem;
+		padding: 1% 20%;
+	}
+
+	.pSucursal{
+		font-size: 1.1rem;
+	}
+
+	.aside{
+		margin: 15px 0;
+		font-size: 1.1rem;
+	}
+
+	#footerLetra{
+		font-size: 1.1rem;
+	}
+
+	footer img{
+		height: 17px;
+		margin: 4px;
+	}
+
+	/*¨¨¨¨FIN DE INDEX¨¨¨¨*/
+
+	/*¨¨¨¨LIBRERIA¨¨¨¨*/
+
+	.wrap h1{
+		font-size: 2rem;
+	}
+
+
+	.category_list .category_item{
+		padding: 10px 0;
+		margin-bottom: 20px;
+		font-size: 1.2rem;
+	}
+
+
+	.products-list .product-item a{
+		font-size: 1.2rem;
+	}
+
+	/*¨¨¨¨FIN LIBRERIA¨¨¨¨*/
+
+	/*¨¨¨¨COMBOS¨¨¨¨*/
+
+	.wrap .combos figure figcaption{
+	  	font-size: 1.5rem;
+	}
+
+
+	.wrap .combos figure a{
+	  	font-size: 1.2rem;
+	}
+
+	.wrap .combos figure p{
+		font-size: 1.1rem;
+		padding: 15px 0;
+	}
+
+
+	/*¨¨¨¨FIN COMBOS¨¨¨¨*/
+
+
+	/*¨¨¨¨NOSOTROS¨¨¨¨*/
+
+
+	.quinesSomos{
+		display: grid;
+		grid-template-areas: 
+		"section1" 
+		"section2" 
+		"section3" 
+		"asideVisita" 
+		"asideImg";
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto auto auto 13vh;
+		grid-gap: auto 0;
+	}
+
+	#asideVisita{
+		text-align: center;
+		grid-area: asideVisita;
+		font-size: 1.2rem;
+		height: 15px;
+	}
+
+	section article img{
+		width: 30%;
+		margin: 10px 0;
+	}
+
+	div section article{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div section article p{
+		font-size: 1.3rem;
+		padding: 0 10px;
+	}
+
+	div section h1,h2,h3{
+		margin-bottom: 4px;
+		font-size: 1.8rem;
+	}
+
+	@keyframes animationAside{
+   		0%{background-image: url(../img/img-horizontal-aside/5.png);}
+		25%{background-image: url(../img/img-horizontal-aside/2.png);}
+		50%{background-image: url(../img/img-horizontal-aside/3.png);}
+		75%{background-image: url(../img/img-horizontal-aside/4.png);}
+		100%{background-image: url(../img/img-horizontal-aside/5.png);}
+	}
+	 
+
+	/*¨¨¨¨FIN NOSOTROS¨¨¨¨*/
+
+	/*¨¨¨¨CONTACTO¨¨¨¨*/
+
+
+	.form-title{
+		font-size: 2.1rem;
+		padding: 14px 0;
+	   font-family: 'Montserrat', sans-serif;
+	}
+
+
+	.form-label{
+		font-size: 1.8rem;
+		padding-bottom: 10px;
+	}
+	
+
+	.btn{
+		font-size: 1.8rem;
+		padding: 10px 0;
+	}
+
+
+	.form-input, 
+	.form-textarea{
+		font-size: 1.5rem;
+	}
+
+	/*¨¨¨¨FIN CONTACTO¨¨¨¨*/
+
+
+}
+
+
+@media screen and (max-width: 712px){
+	
+	/*¨¨¨¨INDEX¨¨¨¨*/
+
+	.navImg{
+		display: block;
+		margin-right: 20px;
+		width: 78%;
+	}
+
+	.navLabel{
+		cursor: pointer;
+	}
+
+
+	#gridIndex{
+		grid-template-rows: 45px auto auto auto auto auto 45px;
+		grid-template-columns: 100%;
+	}
+
+	nav a img{
+		height: 30px;
+	}
+
+	.navMenu{
+		position: fixed;
+		top: 45px;
+		bottom: 0;
+		background-color: darkred;
+		width: 100%;
+		left: 0;
+		z-index: 3;
+
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+		text-align: center;
+
+		clip-path: circle(0 at center);
+		transition: clip-path 1s ease-in-out;
+	}
+
+	.navImput:checked + .navMenu{
+		clip-path: circle(100% at center);
+	}
+
+
+
+
+
+
+	/*¨¨¨¨FIN DE INDEX¨¨¨¨*/
+
+
+	#mainIndex{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	.promociones{
+		width: 80%;
+		margin-bottom: 10px;
+	}
+
+
+	.tituloPromociones{
+		font-size: 1.5rem;
+	}
+
+
+	.sucursal{
+		width: 80%;
+	}
+
+	.tituloSucursal{
+		font-size: 1.5rem;
+	}
+
+
+
+	section.promociones figure figcaption{
+		font-size: 1.3rem;
+	}
+
+
+	.mapa{
+		height: 55%;
+	}
+
+
+	.publicidad1{
+		width: 80%;
+		margin: auto;
+		padding: 0;
+	}
+
+
+	.publicidad2{
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+	}
+
+	.publicidad2 img{
+		margin: 4px 0;
+		width: 65%;
+	}
+
+	.publicidad1 img{
+		width: 25%;
+	}
+
+	/*¨¨¨¨FIN INDEX¨¨¨¨*/
+
+
+	/*¨¨¨¨LIBRERIA¨¨¨¨*/
+
+	.store-wrapper{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	} 
+
+
+
+	.category_list{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+
+	.category_list .category_item{
+		width: 30%;
+		padding: 10px 0;
+		margin: 0 3px 7px 3px;
+		font-size: 1.2rem;
+	}
+
+	.wrap h1{
+		margin: 10px 0px;
+	}
+
+	.wrap h1:after{
+		margin: 7px 0;
+	}
+
+
+	.products-list{
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.products-list .product-item{
+		width: 35%;
+		margin-left: 0;
+	}
+
+	/*¨¨¨¨FIN LIBRERIA¨¨¨¨*/
+
+	/*¨¨¨¨COMBOS¨¨¨¨*/
+
+
+	.wrap .combos{
+		grid-template-areas: 
+		"figura1 figura2" 
+		"figura3 figura4" 
+		"figura5 figura6";	
+		grid-gap: 10px 2px;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.wrap .combos figure a{
+		padding: 1px 35px;
+	}
+
+
+	/*¨¨¨¨FIN COMBOS¨¨¨¨*/
+
+	/*¨¨¨¨NOSOTROS¨¨¨¨*/
+
+	section article img{
+		width: 60%;
+		margin: 15px 0;
+	}
+
+	div section h1,h2,h3{
+		margin-bottom: 10px;
+		font-size: 1.8rem;
+	}
+
+	@keyframes animationAside{
+   		0%{background-image: url(../img/img-horizontal-aside/mobile/5.png);}
+		25%{background-image: url(../img/img-horizontal-aside/mobile/2.png);}
+		50%{background-image: url(../img/img-horizontal-aside/mobile/3.png);}
+		75%{background-image: url(../img/img-horizontal-aside/mobile/4.png);}
+		100%{background-image: url(../img/img-horizontal-aside/mobile/5.png);}
+	}
+
+	#asideImg{
+		grid-area: asideImg;
+		background-size:cover;
+		animation-name: animationAside;
+		animation-iteration-count: infinite;
+		animation-duration: 20s;
+	}
+
+	/*¨¨¨¨FIN NOSOTROS¨¨¨¨*/
+
+	/*¨¨¨¨CONTACTO¨¨¨¨*/
+
+	.form-title{
+		font-size: 1.7rem;
+		padding: 8px 0;
+	}
+
+	.form-label{
+		font-size: 1.4rem;
+	}
+	
+
+	.btn{
+		font-size: 1.2rem;
+	}
+
+
+	.form-input, 
+	.form-textarea{
+		font-size: 1.2rem;
+	}
+
+	.form-input, 
+	.form-textarea{
+		padding: 8px;
+		margin-bottom: 10px;
+	}
+
+	/*¨¨¨¨¨FIN DE CONTACTO¨¨¨¨*/
+
+}
