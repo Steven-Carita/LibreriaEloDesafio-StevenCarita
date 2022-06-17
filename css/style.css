@@ -34,7 +34,7 @@ nav{
 	grid-area: nav;
 	display: flex;
 	justify-content: space-between;
-	background: red;
+	background: linear-gradient(to left, red, darkred);
 	align-items: center;
 
 }
@@ -199,7 +199,7 @@ section.promociones figure a:hover{
 }
 
 .publicidad1 img{
-	width: 17%;
+	width: 20%;
 }
 
 .publicidad2{
@@ -569,31 +569,48 @@ form{
 	}
 
 	section.promociones figure figcaption{
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 		margin-top: 4px;
 	}
 
 	section.promociones figure p{
-		font-size: 1rem;
+		font-size: 1.3rem;
 		padding: 5px 0 10px 0;
 	}
 
 	section.promociones figure a{
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 		padding: 1% 20%;
 	}
 
 	.pSucursal{
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}
 
 	.aside{
 		margin: 15px 0;
-		font-size: 1.1rem;
+		font-size: 1.3rem;
+	}
+
+	.publicidad1 img{
+		width: 27%;
+	}
+
+
+	.publicidad2 img{
+		width: 49%;
+	}
+
+	.publicidad2{
+		display: flex;
+		justify-content: space-between;
+		width: 95%;
+		margin: auto;
+		padding: 10px 0 ;
 	}
 
 	#footerLetra{
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}
 
 	footer img{
@@ -778,12 +795,11 @@ form{
 		clip-path: circle(100% at center);
 	}
 
-
-
-
-
-
-	/*¨¨¨¨FIN DE INDEX¨¨¨¨*/
+	.mapa{
+		width: 95%;
+		height: 40%;
+		margin-bottom: 40px;
+	}
 
 
 	#mainIndex{
@@ -800,7 +816,7 @@ form{
 
 
 	.tituloPromociones{
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 	}
 
 
@@ -809,13 +825,13 @@ form{
 	}
 
 	.tituloSucursal{
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 	}
 
 
 
 	section.promociones figure figcaption{
-		font-size: 1.3rem;
+		font-size: 1.6rem;
 	}
 
 
@@ -825,9 +841,10 @@ form{
 
 
 	.publicidad1{
-		width: 80%;
+		width: 95%;
 		margin: auto;
 		padding: 0;
+		justify-content: space-evenly;
 	}
 
 
@@ -839,11 +856,11 @@ form{
 
 	.publicidad2 img{
 		margin: 4px 0;
-		width: 65%;
+		width: 90%;
 	}
 
 	.publicidad1 img{
-		width: 25%;
+		width: 32%;
 	}
 
 	/*¨¨¨¨FIN INDEX¨¨¨¨*/
