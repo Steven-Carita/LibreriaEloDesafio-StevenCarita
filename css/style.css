@@ -461,11 +461,11 @@ div section h1,h2,h3{
 }
 
 @keyframes animationAside{
-	0%{background-image: url(../img/img-vertical-aside/5.gif);}
-	25%{background-image: url(../img/img-vertical-aside/2.png);}
-	50%{background-image: url(../img/img-vertical-aside/3.png);}
-	75%{background-image: url(../img/img-vertical-aside/4.png);}
-	100%{background-image: url(../img/img-vertical-aside/5.gif);}
+	0%{background-image: url(../imagenes/img-vertical-aside/5.gif);}
+	25%{background-image: url(../imagenes/img-vertical-aside/2.png);}
+	50%{background-image: url(../imagenes/img-vertical-aside/3.png);}
+	75%{background-image: url(../imagenes/img-vertical-aside/4.png);}
+	100%{background-image: url(../imagenes/img-vertical-aside/5.gif);}
 }
 
 
@@ -706,11 +706,11 @@ form{
 	}
 
 	@keyframes animationAside{
-   		0%{background-image: url(../img/img-horizontal-aside/5.png);}
-		25%{background-image: url(../img/img-horizontal-aside/2.png);}
-		50%{background-image: url(../img/img-horizontal-aside/3.png);}
-		75%{background-image: url(../img/img-horizontal-aside/4.png);}
-		100%{background-image: url(../img/img-horizontal-aside/5.png);}
+   		0%{background-image: url(../imagenes/img-horizontal-aside/5.png);}
+		25%{background-image: url(../imagenes/img-horizontal-aside/2.png);}
+		50%{background-image: url(../imagenes/img-horizontal-aside/3.png);}
+		75%{background-image: url(../imagenes/img-horizontal-aside/4.png);}
+		100%{background-image: url(../imagenes/img-horizontal-aside/5.png);}
 	}
 	 
 
@@ -947,11 +947,11 @@ form{
 	}
 
 	@keyframes animationAside{
-   		0%{background-image: url(../img/img-horizontal-aside/mobile/5.png);}
-		25%{background-image: url(../img/img-horizontal-aside/mobile/2.png);}
-		50%{background-image: url(../img/img-horizontal-aside/mobile/3.png);}
-		75%{background-image: url(../img/img-horizontal-aside/mobile/4.png);}
-		100%{background-image: url(../img/img-horizontal-aside/mobile/5.png);}
+   		0%{background-image: url(../imagenes/img-horizontal-aside/mobile/5.png);}
+		25%{background-image: url(../imagenes/img-horizontal-aside/mobile/2.png);}
+		50%{background-image: url(../imagenes/img-horizontal-aside/mobile/3.png);}
+		75%{background-image: url(../imagenes/img-horizontal-aside/mobile/4.png);}
+		100%{background-image: url(../imagenes/img-horizontal-aside/mobile/5.png);}
 	}
 
 	#asideImg{
